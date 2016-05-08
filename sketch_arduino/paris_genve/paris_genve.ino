@@ -4,7 +4,7 @@
  *
  * Painting control by the brain through Internet
  *
- * Code get data on url http://one-billion-cat.com/test/openbci/index.php
+ * Code get data on url
  * 
  * V1.0
  * Written by Bastien DIDIER
@@ -33,7 +33,7 @@ void setup() {
 
 void loop() {
   Process p;
-  p.runShellCommand("/usr/bin/curl http://one-billion-cat.com/test/openbci/index.php");
+  p.runShellCommand("/usr/bin/curl http://URL.net/index.php");
   Serial.println("run curl command");
   
   while (p.running());
